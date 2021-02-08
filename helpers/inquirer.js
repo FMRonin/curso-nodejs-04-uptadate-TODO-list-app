@@ -87,7 +87,7 @@ const InquirerPause = async() => {
     await inquirer.prompt(question)
 }
 
-const InquirerReadInput = async(message) => {
+const InquirerReadInput = async(message = 'Por favor ingrese un valor') => {
     const question =[{
         type:'input',
         name:'desc',
